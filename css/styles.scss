@@ -1,0 +1,367 @@
+@use "bootstrap.css";
+
+$main-colore: #F53838;
+$white: #FFFFFF;
+$blur: 0px 99px 40px rgba(246, 9, 13, 0.01), 0px 56px 34px rgba(246, 9, 13, 0.05), 0px 25px 25px rgba(246, 9, 13, 0.09), 0px 6px 14px rgba(246, 9, 13, 0.1), 0px 0px 0px rgba(246, 9, 13, 0.1);
+$text-main-colore: #4F5665;
+$paddings: 80px 0 130px;
+$paddings-bottom: 130px;
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  max-width: 1140px;
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  color: $text-main-colore;
+}
+.navbar-light {
+  .navbar-nav {
+    &:last-of-type {
+      .nav-item {
+        margin-right: 30px;
+
+        &:last-of-type {
+          margin-right: 0;
+        }
+      }
+    }
+    .nav-link {
+      color: #4F5665;
+      padding: 0;
+      font-family: 'Rubik';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+    }
+  }
+  .navbar-actions {
+    .btn-secondary {
+      padding: 13px 45px;
+      box-sizing: border-box;
+      border: 1px solid #F53855;
+      color: $main-colore;
+      border-radius: 50px;
+      background: white;
+      &:hover {
+        background: $main-colore;
+        box-shadow: $blur;
+        &:hover {
+          a {
+            color: $white;
+          }
+
+        }
+      }
+      .nav-link {
+        color: $main-colore;
+        font-family: 'Rubik';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+      }
+    }
+    .nav-link {
+      color: #0B132A;
+    }
+  }
+}
+.navbar-expand-lg {
+  .navbar-nav {
+    .nav-item {
+      margin-right: 40px;
+      &:last-of-type {
+        margin-right: 0;
+      }
+    }
+  }
+}
+.main_section {
+  padding: 88px 0 103px;
+  box-sizing: border-box;
+  //min-height: 100vh;
+  img {
+    width: 100%;
+  }
+  p {
+    margin: 20px 0 50px;
+  }
+}
+h1 {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 70px;
+  color: #0B132A;
+}
+.btn-primary {
+  border: 1px solid $main-colore;
+  border-radius: 10px;
+  padding: 17px 77px;
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 25px;
+  color: $main-colore;
+  background: $white;
+  &:hover {
+    background: $main-colore;
+    box-shadow: $blur;
+    color: $white;
+    text-decoration: none;
+    border: none;
+  }
+}
+h4 {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  color: #0B132A;
+}
+.Info {
+  padding: 95px 0 130px;
+  box-sizing: border-box;
+  .container {
+    box-shadow: 95px 1843px 738px rgba(13, 16, 37, 0.01), 53px 1037px 623px rgba(13, 16, 37, 0.03), 24px 461px 461px rgba(13, 16, 37, 0.05), 6px 115px 254px rgba(13, 16, 37, 0.1), 0px 0px 0px rgba(13, 16, 37, 0.1);
+    padding: 32px 64px ;
+    box-sizing: border-box;
+    border-radius: 10px;
+  }
+  .subtitle {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #4F5665;
+  }
+  img {
+    width: 55px;
+    height: 55px;
+  }
+  .subtext {
+    margin-left: 36px;
+  }
+  article {
+    justify-content: center;
+    position: relative;
+    &:after {
+      width: 2px;
+      height: 100%;
+      display: inline-block;
+      content: "";
+      background: #EEEFF2;
+      right: 0;
+      position: absolute;
+
+    }
+    &:last-of-type {
+      &:after {
+        width: 0;
+      }
+    }
+  }
+  p {
+    margin-bottom: 0;
+  }
+}
+h2 {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 50px;
+  color: #0B132A;
+}
+.second_banner {
+  padding-bottom: $paddings-bottom;
+  box-sizing: border-box;
+  p {
+    margin: 20px 0;
+  }
+  box-shadow: 0px 5491px 2196px rgba(0, 0, 0, 0.01), 0px 3089px 1853px rgba(0, 0, 0, 0.02), 0px 1373px 1373px rgba(0, 0, 0, 0.03), 0px 343px 755px rgba(0, 0, 0, 0.03), 0px 0px 0px rgba(0, 0, 0, 0.03);
+  ul {
+    li {
+      list-style-type: none;
+      font-family: 'Rubik';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 30px;
+      color: $text-main-colore;
+      margin-bottom: 15px;
+      &:before {
+        width: 24px;
+        height: 24px;
+        content: "";
+        display: inline-block;
+        background: url("../img/Tick.png");
+        margin-right: 10px;
+
+      }
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.card-deck {
+  ul {
+    li {
+      font-family: 'Rubik';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 30px;
+      color: #4F5665;
+      &:before {
+        width: 24px;
+        height: 24px;
+        content: "";
+        display: inline-block;
+        background: url("../img/Tick2.png");
+        margin-right: 20px;
+      }
+    }
+  }
+}
+
+.Plans {
+  .card-body {
+    padding: 80px 70px 50px;
+
+    h5 {
+      &:before {
+        max-width: 144px;
+        height: 165px;
+        content: "";
+        display: block;
+        background: url("../img/Illustration-Free.png");
+        margin: 0 auto 30px;
+
+      }
+    }
+  }
+}
+h5 {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 30px;
+  color: #0B132A;
+}
+.btn-secondary {
+  padding: 13px 45px;
+  box-sizing: border-box;
+  border: 1px solid #F53855;
+  color: $main-colore;
+  border-radius: 50px;
+  background: white;
+  &:hover {
+    background: $main-colore;
+    box-shadow: $blur;
+    border: 0;
+    &:hover {
+      a {
+        color: $white;
+      }
+    }
+  }
+}
+.button-1 {
+  margin-top: auto;
+}
+.btn-secondary-2 {
+  padding: 13px 62px;
+}
+.Plans {
+  padding: $paddings;
+  box-sizing: border-box;
+}
+.Map {
+  p {
+    padding-bottom: $paddings-bottom;
+  }
+  img {
+    width: 100%;
+  }
+}
+.owl-carousel {
+  .owl-item {
+    img {
+      display: block;
+      width: 100%;
+      height: 52px;
+    }
+  }
+}
+.logos {
+  margin: 120px 0;
+}
+
+.Comments {
+  .card {
+    padding: 30px;
+    box-sizing: border-box;
+    border: 2px solid #DDDDDD;
+    background: rgba(0, 0, 0, 0);
+    &:hover {
+      border: 2px solid $main-colore;
+      background: #FFFFFF;
+
+    }
+    border-radius: 10px;
+    h5 {
+      margin-bottom: 5px;
+    }
+    p {
+      margin-bottom: 0;
+      max-width: 340px;
+    }
+    img {
+      width: 50px;
+      height: 50px;
+      margin-right: 20px;
+    }
+    max-width: 360px;
+    .subtitle-card {
+      font-family: 'Rubik';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 30px;
+      color: #4F5665;
+    }
+    .rating {
+      font-family: 'Rubik';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 30px;
+      color: #0B132A;
+      &:after {
+        width: 16px;
+        height: 16px;
+        display: inline-block;
+        content: "";
+        background: url("../img/Star.png");
+        margin-left: 10px;
+      }
+    }
+  }
+}
