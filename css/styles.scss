@@ -152,6 +152,9 @@ h1 {
 }
 .wrapper-service {
   padding: 32px 64px ;
+  @media screen and (max-width: 376px) {
+    padding: 32px 32px ;
+  }
   article {
     &:nth-of-type(2) {
       @media screen and (max-width: 429px) {
@@ -175,6 +178,9 @@ h4 {
 }
 .Info {
   padding: 95px 0 130px;
+  @media screen and (max-width: 376px) {
+    padding: 95px 15px 130px;
+  }
   box-sizing: border-box;
   .container {
     @media screen and (max-width: 1024px) {
@@ -597,6 +603,9 @@ footer {
   background: #F8F8F8;
   padding: 180px 0 100px;
   box-sizing: border-box;
+  @media screen and (max-width: 429px) {
+    padding: 140px 0 80px;
+  }
   .logos-2 {
     margin-bottom: 30px;
     a {
@@ -677,6 +686,22 @@ footer {
       max-width: 398px;
       margin-left: -199px;
       top: -240px;
+    }
+    @media screen and (max-width: 415px) {
+      max-width: 384px;
+      margin-left: -192px;
+      top: -180px;
+      padding: 24px 24px;
+    }
+    @media screen and (max-width: 391px) {
+      max-width: 360px;
+      margin-left: -180px;
+      padding: 24px 16px;
+    }
+    @media screen and (max-width: 376px) {
+      max-width: 345px;
+      margin-left: -172px;
+      padding: 24px 16px;
     }
     box-sizing: border-box;
     background: #FFFFFF;
