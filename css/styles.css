@@ -10530,11 +10530,6 @@ h2 {
   margin-right: 20px;
 }
 
-.owl-carousel .owl-stage-outer {
-  position: relative;
-  overflow: hidden;
-  -webkit-transform: translate3d(0px, 0px, 0px);
-}
 @media screen and (max-width: 993px) {
   .owl-carousel .owl-stage-outer {
     max-width: 914px;
@@ -10857,6 +10852,7 @@ footer .banner {
   footer .banner {
     max-width: 804px;
     margin-left: -402px;
+    padding: 56px 56px;
   }
 }
 @media screen and (max-width: 835px) {

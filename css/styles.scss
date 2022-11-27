@@ -290,11 +290,7 @@ h2 {
 }
 .owl-carousel {
   .owl-stage-outer {
-    position: relative;
-    overflow: hidden;
-    -webkit-transform: translate3d(0px, 0px, 0px);
     @media screen and (max-width: 993px) {
-      //-webkit-transform: translate3d(63px, 0px, 0px);
       max-width: 914px;
     }
 
@@ -303,11 +299,9 @@ h2 {
     }
     @media screen and (max-width: 801px) {
       max-width: 764px;
-      //-webkit-transform: translate3d(14px, 0px, 0px);
     }
     @media screen and (max-width: 769px) {
       max-width: 733px;
-      //-webkit-transform: translate3d(6px, 0px, 0px);
     }
   }
 }
@@ -461,8 +455,6 @@ h5 {
 .Comments {
   padding-bottom: 200px;
   box-sizing: border-box;
-
-
   .owl-carousel.owl-drag {
     .owl-item {
       -ms-touch-action: pan-y;
@@ -486,15 +478,11 @@ h5 {
     .owl-dots {
       display: flex;
     }
-
-
     .owl-nav.disabled {
-
       display: inline-block;
     }
     .owl-dots.disabled {
       display: inline-block;
-
     }
     button.owl-dot {
       width: 15px;
@@ -502,23 +490,16 @@ h5 {
       background: #DDE0E4;
       border-radius: 50%;
       margin-left: 15px;
-
-
     }
     .owl-dot.active {
       width: 45px;
       height: 15px;
       border-radius: 12px;
       background: $main-colore;
-
     }
-
-
     .owl-nav {
       display: flex;
       justify-content: end;
-
-
       button.owl-next.disabled {
         width: 60px;
         height: 60px;
@@ -581,7 +562,6 @@ footer {
   ul {
 
     li {
-
       list-style-type: none;
       &:last-of-type {
         margin-bottom: 0;
@@ -629,6 +609,7 @@ footer {
     @media screen and (max-width: 835px) {
       max-width: 804px;
       margin-left: -402px;
+      padding: 56px 56px;
     }
     @media screen and (max-width: 835px) {
       max-width: 790px;
