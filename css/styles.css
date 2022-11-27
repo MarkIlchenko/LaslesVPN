@@ -10475,6 +10475,16 @@ h4 {
     max-width: 398px;
   }
 }
+@media screen and (max-width: 391px) {
+  .Info .container {
+    max-width: 368px;
+  }
+}
+@media screen and (max-width: 376px) {
+  .Info .container {
+    max-width: 345px;
+  }
+}
 @media screen and (max-width: 321px) {
   .Info .container {
     padding: 8px;
@@ -10530,6 +10540,36 @@ h4 {
   background: #EEEFF2;
   right: -130px;
   position: absolute;
+}
+@media screen and (max-width: 1025px) {
+  .Info article:after {
+    right: -55%;
+  }
+}
+@media screen and (max-width: 993px) {
+  .Info article:after {
+    right: -51%;
+  }
+}
+@media screen and (max-width: 834px) {
+  .Info article:after {
+    right: -37%;
+  }
+}
+@media screen and (max-width: 821px) {
+  .Info article:after {
+    right: -31%;
+  }
+}
+@media screen and (max-width: 801px) {
+  .Info article:after {
+    right: -32%;
+  }
+}
+@media screen and (max-width: 769px) {
+  .Info article:after {
+    right: -26%;
+  }
 }
 @media screen and (max-width: 429px) {
   .Info article:after {
@@ -10841,12 +10881,6 @@ h5 {
   display: flex;
   justify-content: end;
 }
-@media screen and (max-width: 429px) {
-  .Comments .owl-carousel .owl-nav button.owl-next.disabled, .Comments .owl-carousel .owl-nav button.owl-prev.disabled, .Comments .owl-carousel .owl-nav button.owl-prev, .Comments .owl-carousel .owl-nav button.owl-next {
-    width: unset;
-    height: unset;
-  }
-}
 .Comments .owl-carousel .owl-nav button.owl-next.disabled {
   width: 60px;
   height: 60px;
@@ -10854,6 +10888,12 @@ h5 {
   background-size: cover;
   position: relative;
   top: 38px;
+}
+@media screen and (max-width: 429px) {
+  .Comments .owl-carousel .owl-nav button.owl-next.disabled {
+    width: unset;
+    height: unset;
+  }
 }
 .Comments .owl-carousel .owl-nav button.owl-prev.disabled {
   width: 60px;
@@ -10863,6 +10903,12 @@ h5 {
   position: relative;
   top: 38px;
 }
+@media screen and (max-width: 429px) {
+  .Comments .owl-carousel .owl-nav button.owl-prev.disabled {
+    width: unset;
+    height: unset;
+  }
+}
 .Comments .owl-carousel .owl-nav button.owl-prev {
   width: 60px;
   height: 60px;
@@ -10871,6 +10917,12 @@ h5 {
   position: relative;
   top: 38px;
 }
+@media screen and (max-width: 429px) {
+  .Comments .owl-carousel .owl-nav button.owl-prev {
+    width: unset;
+    height: unset;
+  }
+}
 .Comments .owl-carousel .owl-nav button.owl-next {
   width: 60px;
   height: 60px;
@@ -10878,6 +10930,12 @@ h5 {
   position: relative;
   top: 38px;
   margin-left: 20px;
+}
+@media screen and (max-width: 429px) {
+  .Comments .owl-carousel .owl-nav button.owl-next {
+    width: 0;
+    height: unset;
+  }
 }
 
 footer {
@@ -10994,15 +11052,15 @@ footer .banner {
 @media screen and (max-width: 429px) {
   footer .banner {
     max-width: 398px;
+    padding: 24px;
     margin-left: -199px;
-    top: -240px;
+    top: -180px;
   }
 }
 @media screen and (max-width: 415px) {
   footer .banner {
     max-width: 384px;
     margin-left: -192px;
-    top: -180px;
     padding: 24px 24px;
   }
 }

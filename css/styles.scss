@@ -214,6 +214,15 @@ h4 {
     @media screen and (max-width: 429px) {
       max-width: 398px;
     }
+    @media screen and (max-width: 391px) {
+      max-width: 368px;
+
+    }
+    @media screen and (max-width: 376px) {
+      max-width: 345px;
+
+    }
+
     @media screen and (max-width: 321px) {
       padding: 8px;
 
@@ -266,6 +275,24 @@ h4 {
       background: #EEEFF2;
       right: -130px;
       position: absolute;
+      @media screen and (max-width: 1025px) {
+        right: -55%;
+      }
+      @media screen and (max-width: 993px) {
+        right: -51%;
+      }
+      @media screen and (max-width: 834px) {
+        right: -37%;
+      }
+      @media screen and (max-width: 821px) {
+        right: -31%;
+      }
+      @media screen and (max-width: 801px) {
+        right: -32%;
+      }
+      @media screen and (max-width: 769px) {
+        right: -26%;
+      }
       @media screen and (max-width: 429px) {
         opacity: 0;
       }
@@ -568,12 +595,7 @@ h5 {
     .owl-nav {
       display: flex;
       justify-content: end;
-      button.owl-next.disabled, button.owl-prev.disabled, button.owl-prev, button.owl-next {
-        @media screen and (max-width: 429px) {
-          width: unset;
-          height: unset;
-        }
-      }
+
       button.owl-next.disabled {
         width: 60px;
         height: 60px;
@@ -581,6 +603,10 @@ h5 {
         background-size: cover;
         position: relative;
         top: 38px;
+        @media screen and (max-width: 429px) {
+          width: unset;
+          height: unset;
+        }
       }
       button.owl-prev.disabled {
         width: 60px;
@@ -589,6 +615,10 @@ h5 {
         background-size: cover;
         position: relative;
         top: 38px;
+        @media screen and (max-width: 429px) {
+          width: unset;
+          height: unset;
+        }
       }
 
       button.owl-prev {
@@ -598,6 +628,10 @@ h5 {
         display: block;
         position: relative;
         top: 38px;
+        @media screen and (max-width: 429px) {
+          width: unset;
+          height: unset;
+        }
       }
 
       button.owl-next {
@@ -607,6 +641,10 @@ h5 {
         position: relative;
         top: 38px;
         margin-left: 20px;
+        @media screen and (max-width: 429px) {
+          width: 0;
+          height: unset;
+        }
       }
     }
   }
@@ -702,13 +740,13 @@ footer {
     }
     @media screen and (max-width: 429px) {
       max-width: 398px;
+      padding: 24px;
       margin-left: -199px;
-      top: -240px;
+      top: -180px;
     }
     @media screen and (max-width: 415px) {
       max-width: 384px;
       margin-left: -192px;
-      top: -180px;
       padding: 24px 24px;
     }
     @media screen and (max-width: 391px) {
