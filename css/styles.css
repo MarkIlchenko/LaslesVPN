@@ -10313,7 +10313,7 @@ h3 {
 }
 
 .main_section {
-  padding: 88px 0 103px;
+  padding: 88px 0 28px;
   box-sizing: border-box;
 }
 .main_section img {
@@ -10579,6 +10579,10 @@ h5 {
   margin-left: 10px;
 }
 
+.Comments {
+  padding-bottom: 200px;
+  box-sizing: border-box;
+}
 .Comments .owl-carousel.owl-drag .owl-item {
   -ms-touch-action: pan-y;
   touch-action: pan-y;
@@ -10652,6 +10656,65 @@ h5 {
   position: relative;
   top: 38px;
   margin-left: 20px;
+}
+
+footer {
+  position: relative;
+  background: #F8F8F8;
+  padding: 180px 0 100px;
+  box-sizing: border-box;
+}
+footer .logos-2 {
+  margin-bottom: 30px;
+}
+footer .logos-2 a:nth-of-type(2) {
+  margin: 0 20px;
+}
+footer .subtitle-2 {
+  margin: 20px 0 30px;
+}
+footer ul li {
+  list-style-type: none;
+  margin-bottom: 10px;
+}
+footer ul li:last-of-type {
+  margin-bottom: 0;
+}
+footer ul li a {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  color: #4F5665;
+}
+footer ul li a:hover {
+  text-decoration: none;
+}
+footer ul li:first-of-type a {
+  margin-bottom: 20px;
+  text-decoration: none;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 30px;
+  color: #0B132A;
+}
+footer .banner {
+  position: absolute;
+  padding: 58px 70px;
+  box-sizing: border-box;
+  background: #FFFFFF;
+  border-radius: 10px;
+  z-index: 2;
+  left: 50%;
+  margin-left: -570px;
+  top: -150px;
+}
+
+.text-sub {
+  margin: 20px 0 60px;
 }
 
 /*# sourceMappingURL=styles.css.map */
