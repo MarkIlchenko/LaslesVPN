@@ -35,9 +35,14 @@ $paddings-bottom: 130px;
     &:last-of-type {
       .nav-item {
         margin-right: 30px;
-
+        @media screen and (max-width: 835px) {
+          margin-right: auto;
+        }
         &:last-of-type {
           margin-right: 0;
+          @media screen and (max-width: 835px) {
+            margin-right: auto;
+          }
         }
       }
     }
@@ -88,6 +93,12 @@ $paddings-bottom: 130px;
   .navbar-nav {
     .nav-item {
       margin-right: 40px;
+      @media screen and (max-width: 835px) {
+        margin-bottom: 24px;
+        &:first-of-type {
+          margin-top: 24px;
+        }
+      }
       &:last-of-type {
         margin-right: 0;
       }
@@ -99,6 +110,7 @@ $paddings-bottom: 130px;
     max-height: 671px;
   }
 }
+
 .main_section {
   padding: 88px 0 28px;
   box-sizing: border-box;

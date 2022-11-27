@@ -10269,8 +10269,18 @@ h3 {
 .navbar-light .navbar-nav:last-of-type .nav-item {
   margin-right: 30px;
 }
+@media screen and (max-width: 835px) {
+  .navbar-light .navbar-nav:last-of-type .nav-item {
+    margin-right: auto;
+  }
+}
 .navbar-light .navbar-nav:last-of-type .nav-item:last-of-type {
   margin-right: 0;
+}
+@media screen and (max-width: 835px) {
+  .navbar-light .navbar-nav:last-of-type .nav-item:last-of-type {
+    margin-right: auto;
+  }
 }
 .navbar-light .navbar-nav .nav-link {
   color: #4F5665;
@@ -10311,6 +10321,14 @@ h3 {
 
 .navbar-expand-lg .navbar-nav .nav-item {
   margin-right: 40px;
+}
+@media screen and (max-width: 835px) {
+  .navbar-expand-lg .navbar-nav .nav-item {
+    margin-bottom: 24px;
+  }
+  .navbar-expand-lg .navbar-nav .nav-item:first-of-type {
+    margin-top: 24px;
+  }
 }
 .navbar-expand-lg .navbar-nav .nav-item:last-of-type {
   margin-right: 0;
