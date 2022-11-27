@@ -10316,11 +10316,21 @@ h3 {
   padding: 88px 0 28px;
   box-sizing: border-box;
 }
+@media screen and (max-width: 835px) {
+  .main_section {
+    padding: 64px 0 28px;
+  }
+}
 .main_section img {
   width: 100%;
 }
 .main_section p {
   margin: 20px 0 50px;
+}
+@media screen and (max-width: 835px) {
+  .main_section p {
+    margin: 16px 0 36px;
+  }
 }
 
 h1 {
@@ -10330,6 +10340,12 @@ h1 {
   font-size: 50px;
   line-height: 70px;
   color: #0B132A;
+}
+@media screen and (max-width: 835px) {
+  h1 {
+    font-size: 36px;
+    line-height: 56px;
+  }
 }
 
 .btn-primary {
@@ -10360,6 +10376,12 @@ h4 {
   line-height: 30px;
   color: #0B132A;
 }
+@media screen and (max-width: 835px) {
+  h4 {
+    font-size: 20px;
+    line-height: 18px;
+  }
+}
 
 .Info {
   padding: 95px 0 130px;
@@ -10371,6 +10393,16 @@ h4 {
   box-sizing: border-box;
   border-radius: 10px;
 }
+@media screen and (max-width: 1024px) {
+  .Info .container {
+    max-width: 994px;
+  }
+}
+@media screen and (max-width: 835px) {
+  .Info .container {
+    max-width: 805px;
+  }
+}
 .Info .subtitle {
   font-family: "Rubik";
   font-style: normal;
@@ -10378,6 +10410,12 @@ h4 {
   font-size: 20px;
   line-height: 30px;
   color: #4F5665;
+}
+@media screen and (max-width: 835px) {
+  .Info .subtitle {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 .Info img {
   width: 55px;
@@ -10413,6 +10451,12 @@ h2 {
   font-size: 35px;
   line-height: 50px;
   color: #0B132A;
+}
+@media screen and (max-width: 835px) {
+  h2 {
+    font-size: 30px;
+    line-height: 44px;
+  }
 }
 
 .second_banner {
@@ -10451,6 +10495,7 @@ h2 {
   font-weight: 400;
   font-size: 14px;
   line-height: 30px;
+  text-align: left;
   color: #4F5665;
 }
 .card-deck ul li:before {
@@ -10462,8 +10507,31 @@ h2 {
   margin-right: 20px;
 }
 
+.owl-carousel .owl-stage-outer {
+  position: relative;
+  overflow: hidden;
+  -webkit-transform: translate3d(0px, 0px, 0px);
+}
+@media screen and (max-width: 1024px) {
+  .owl-carousel .owl-stage-outer {
+    -webkit-transform: translate3d(20px, 0px, 0px);
+    max-width: 799px;
+  }
+}
+
 .Plans .card-body {
   padding: 80px 70px 50px;
+}
+@media screen and (max-width: 1024px) {
+  .Plans .card-body {
+    max-width: 300px;
+  }
+}
+@media screen and (max-width: 835px) {
+  .Plans .card-body {
+    padding: 80px 0 50px;
+    max-width: 242px;
+  }
 }
 .Plans .card-body h5:before {
   max-width: 144px;
@@ -10712,9 +10780,25 @@ footer .banner {
   margin-left: -570px;
   top: -150px;
 }
+@media screen and (max-width: 1024px) {
+  footer .banner {
+    max-width: 994px;
+    margin-left: -497px;
+  }
+}
+@media screen and (max-width: 835px) {
+  footer .banner {
+    max-width: 804px;
+    margin-left: -402px;
+  }
+}
 
 .text-sub {
   margin: 20px 0 60px;
+}
+
+.second_banner img {
+  width: 100%;
 }
 
 /*# sourceMappingURL=styles.css.map */

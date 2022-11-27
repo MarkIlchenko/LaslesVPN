@@ -5,7 +5,7 @@ $(document).ready(function(){
         nav:true,
         lazyLoad: true,
         navText: [ '', ' ' ],
-        autoplay: true,
+        autoplay: false,
         autoplayTimeout:1000,
         responsive:{
             0:{
@@ -35,7 +35,8 @@ $(document).ready(function(){
             },
 
             768:{
-                items:2
+                items:2,
+                margin:0
             },
 
             1000:{

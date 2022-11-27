@@ -1,5 +1,6 @@
 @use "bootstrap.css";
 
+
 $main-colore: #F53838;
 $white: #FFFFFF;
 $blur: 0px 99px 40px rgba(246, 9, 13, 0.01), 0px 56px 34px rgba(246, 9, 13, 0.05), 0px 25px 25px rgba(246, 9, 13, 0.09), 0px 6px 14px rgba(246, 9, 13, 0.1), 0px 0px 0px rgba(246, 9, 13, 0.1);
@@ -7,12 +8,17 @@ $text-main-colore: #4F5665;
 $paddings: 80px 0 130px;
 $paddings-bottom: 130px;
 
-
+@mixin max-screen($res) {
+  @media screen and (max-width: $res) {
+    @content;
+  }
+}
 
 * {
   margin: 0;
   padding: 0;
 }
+
 .container {
   max-width: 1140px;
   font-family: 'Rubik';
@@ -88,12 +94,18 @@ $paddings-bottom: 130px;
 .main_section {
   padding: 88px 0 28px;
   box-sizing: border-box;
+  @media screen and (max-width: 835px) {
+    padding: 64px 0 28px;
+  }
   //min-height: 100vh;
   img {
     width: 100%;
   }
   p {
     margin: 20px 0 50px;
+    @media screen and (max-width: 835px) {
+      margin: 16px 0 36px;
+    }
   }
 }
 h1 {
@@ -103,6 +115,10 @@ h1 {
   font-size: 50px;
   line-height: 70px;
   color: #0B132A;
+  @media screen and (max-width: 835px) {
+    font-size: 36px;
+    line-height: 56px;
+  }
 }
 .btn-primary {
   border: 1px solid $main-colore;
@@ -130,11 +146,21 @@ h4 {
   font-size: 25px;
   line-height: 30px;
   color: #0B132A;
+  @media screen and (max-width: 835px) {
+    font-size: 20px;
+    line-height: 18px;
+  }
 }
 .Info {
   padding: 95px 0 130px;
   box-sizing: border-box;
   .container {
+    @media screen and (max-width: 1024px) {
+      max-width: 994px;
+    }
+    @media screen and (max-width: 835px) {
+      max-width: 805px;
+    }
     box-shadow: 95px 1843px 738px rgba(13, 16, 37, 0.01), 53px 1037px 623px rgba(13, 16, 37, 0.03), 24px 461px 461px rgba(13, 16, 37, 0.05), 6px 115px 254px rgba(13, 16, 37, 0.1), 0px 0px 0px rgba(13, 16, 37, 0.1);
     padding: 32px 64px ;
     box-sizing: border-box;
@@ -147,6 +173,10 @@ h4 {
     font-size: 20px;
     line-height: 30px;
     color: #4F5665;
+    @media screen and (max-width: 835px) {
+      font-size: 16px;
+      line-height: 24px;
+    }
   }
   img {
     width: 55px;
@@ -185,6 +215,10 @@ h2 {
   font-size: 35px;
   line-height: 50px;
   color: #0B132A;
+  @media screen and (max-width: 835px) {
+    font-size: 30px;
+    line-height: 44px;
+  }
 }
 .second_banner {
   padding-bottom: $paddings-bottom;
@@ -227,6 +261,7 @@ h2 {
       font-weight: 400;
       font-size: 14px;
       line-height: 30px;
+      text-align: left;
       color: #4F5665;
       &:before {
         width: 24px;
@@ -239,11 +274,27 @@ h2 {
     }
   }
 }
-
+.owl-carousel {
+  .owl-stage-outer {
+    position: relative;
+    overflow: hidden;
+    -webkit-transform: translate3d(0px, 0px, 0px);
+    @media screen and (max-width: 1024px) {
+      -webkit-transform: translate3d(20px, 0px, 0px);
+      max-width: 799px;
+    }
+  }
+}
 .Plans {
   .card-body {
+    @media screen and (max-width: 1024px) {
+      max-width: 300px;
+    }
     padding: 80px 70px 50px;
-
+    @media screen and (max-width: 835px) {
+      padding: 80px 0 50px;
+      max-width: 242px;
+    }
     h5 {
       &:before {
         max-width: 144px;
@@ -525,6 +576,14 @@ footer {
   .banner {
     position: absolute;
     padding: 58px 70px;
+    @media screen and (max-width: 1024px) {
+      max-width: 994px;
+      margin-left: -497px;
+    }
+    @media screen and (max-width: 835px) {
+      max-width: 804px;
+      margin-left: -402px;
+    }
     box-sizing: border-box;
     background: #FFFFFF;
     border-radius: 10px;
@@ -537,7 +596,11 @@ footer {
 .text-sub {
   margin: 20px 0 60px;
 }
-
+.second_banner {
+  img {
+    width: 100%;
+  }
+}
 
 
 
