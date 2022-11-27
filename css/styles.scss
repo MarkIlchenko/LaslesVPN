@@ -59,6 +59,7 @@ $paddings-bottom: 130px;
       color: $main-colore;
       border-radius: 50px;
       background: white;
+      transition: 0.5s;
       &:hover {
         background: $main-colore;
         box-shadow: $blur;
@@ -93,7 +94,11 @@ $paddings-bottom: 130px;
     }
   }
 }
-
+.Plans {
+  .card {
+    max-height: 671px;
+  }
+}
 .main_section {
   padding: 88px 0 28px;
   box-sizing: border-box;
@@ -137,6 +142,7 @@ h1 {
   line-height: 25px;
   color: $main-colore;
   background: $white;
+  transition: 0.5s;
   &:hover {
     background: $main-colore;
     box-shadow: $blur;
@@ -448,6 +454,7 @@ h5 {
   color: $main-colore;
   border-radius: 50px;
   background: white;
+  transition: 0.5s;
   &:hover {
     background: $main-colore;
     box-shadow: $blur;
