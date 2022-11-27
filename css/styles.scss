@@ -534,9 +534,6 @@ h5 {
     .owl-stage {
       display: flex;
       position: relative;
-      -ms-touch-action: pan-Y;
-      touch-action: manipulation;
-      -moz-backface-visibility: hidden;
     }
     .owl-dots {
       display: flex;
@@ -548,10 +545,7 @@ h5 {
         align-items: center;
       }
     }
-    .owl-nav.disabled {
-      display: inline-block;
-    }
-    .owl-dots.disabled {
+    .owl-nav.disabled, .owl-dots.disabled {
       display: inline-block;
     }
     button.owl-dot {
@@ -574,6 +568,12 @@ h5 {
     .owl-nav {
       display: flex;
       justify-content: end;
+      button.owl-next.disabled, button.owl-prev.disabled, button.owl-prev, button.owl-next {
+        @media screen and (max-width: 429px) {
+          width: unset;
+          height: unset;
+        }
+      }
       button.owl-next.disabled {
         width: 60px;
         height: 60px;
@@ -581,10 +581,6 @@ h5 {
         background-size: cover;
         position: relative;
         top: 38px;
-        @media screen and (max-width: 429px) {
-          width: unset;
-          height: unset;
-        }
       }
       button.owl-prev.disabled {
         width: 60px;
@@ -593,26 +589,15 @@ h5 {
         background-size: cover;
         position: relative;
         top: 38px;
-        @media screen and (max-width: 429px) {
-          width: unset;
-          height: unset;
-        }
       }
 
       button.owl-prev {
         width: 60px;
         height: 60px;
-
-
         background: url("../img/Button-act-left.png");
-
         display: block;
         position: relative;
         top: 38px;
-        @media screen and (max-width: 429px) {
-          width: unset;
-          height: unset;
-        }
       }
 
       button.owl-next {
@@ -622,16 +607,9 @@ h5 {
         position: relative;
         top: 38px;
         margin-left: 20px;
-        @media screen and (max-width: 429px) {
-          width: unset;
-          height: unset;
-        }
       }
     }
   }
-}
-a {
-
 }
 footer {
   position: relative;
@@ -653,7 +631,6 @@ footer {
     margin: 20px 0 30px;
   }
   ul {
-
     li {
       list-style-type: none;
       &:last-of-type {
@@ -674,8 +651,6 @@ footer {
         @media screen and (max-width: 281px) {
           font-size: 10px;
         }
-
-
         &:hover {
           text-decoration: none;
         }
@@ -704,7 +679,6 @@ footer {
       max-width: 994px;
       margin-left: -497px;
     }
-
     @media screen and (max-width: 1024px) {
       max-width: 962px;
       margin-left: -481px;

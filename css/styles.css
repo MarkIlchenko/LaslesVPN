@@ -10800,9 +10800,6 @@ h5 {
 .Comments .owl-carousel .owl-stage {
   display: flex;
   position: relative;
-  -ms-touch-action: pan-Y;
-  touch-action: manipulation;
-  -moz-backface-visibility: hidden;
 }
 .Comments .owl-carousel .owl-dots {
   display: flex;
@@ -10818,10 +10815,7 @@ h5 {
     align-items: center;
   }
 }
-.Comments .owl-carousel .owl-nav.disabled {
-  display: inline-block;
-}
-.Comments .owl-carousel .owl-dots.disabled {
+.Comments .owl-carousel .owl-nav.disabled, .Comments .owl-carousel .owl-dots.disabled {
   display: inline-block;
 }
 .Comments .owl-carousel button.owl-dot {
@@ -10847,6 +10841,12 @@ h5 {
   display: flex;
   justify-content: end;
 }
+@media screen and (max-width: 429px) {
+  .Comments .owl-carousel .owl-nav button.owl-next.disabled, .Comments .owl-carousel .owl-nav button.owl-prev.disabled, .Comments .owl-carousel .owl-nav button.owl-prev, .Comments .owl-carousel .owl-nav button.owl-next {
+    width: unset;
+    height: unset;
+  }
+}
 .Comments .owl-carousel .owl-nav button.owl-next.disabled {
   width: 60px;
   height: 60px;
@@ -10854,12 +10854,6 @@ h5 {
   background-size: cover;
   position: relative;
   top: 38px;
-}
-@media screen and (max-width: 429px) {
-  .Comments .owl-carousel .owl-nav button.owl-next.disabled {
-    width: unset;
-    height: unset;
-  }
 }
 .Comments .owl-carousel .owl-nav button.owl-prev.disabled {
   width: 60px;
@@ -10869,12 +10863,6 @@ h5 {
   position: relative;
   top: 38px;
 }
-@media screen and (max-width: 429px) {
-  .Comments .owl-carousel .owl-nav button.owl-prev.disabled {
-    width: unset;
-    height: unset;
-  }
-}
 .Comments .owl-carousel .owl-nav button.owl-prev {
   width: 60px;
   height: 60px;
@@ -10883,12 +10871,6 @@ h5 {
   position: relative;
   top: 38px;
 }
-@media screen and (max-width: 429px) {
-  .Comments .owl-carousel .owl-nav button.owl-prev {
-    width: unset;
-    height: unset;
-  }
-}
 .Comments .owl-carousel .owl-nav button.owl-next {
   width: 60px;
   height: 60px;
@@ -10896,12 +10878,6 @@ h5 {
   position: relative;
   top: 38px;
   margin-left: 20px;
-}
-@media screen and (max-width: 429px) {
-  .Comments .owl-carousel .owl-nav button.owl-next {
-    width: unset;
-    height: unset;
-  }
 }
 
 footer {
