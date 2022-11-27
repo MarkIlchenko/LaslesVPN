@@ -3,6 +3,7 @@ $(document).ready(function(){
         loop:true,
         margin:0,
         nav:true,
+        lazyLoad: true,
         navText: [ '', ' ' ],
         autoplay: true,
         autoplayTimeout:1000,
@@ -21,8 +22,9 @@ $(document).ready(function(){
         }
     });
     $('.owl-two').owlCarousel({
-        loop:true,
-        margin:0,
+        loop:false,
+        margin:10,
+        lazyLoad: true,
         nav:true,
         navText: [ '', ' ' ],
         autoplay: false,
