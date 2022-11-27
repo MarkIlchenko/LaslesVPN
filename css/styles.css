@@ -1,6 +1,6 @@
 @charset "UTF-8";
 @import "https://fonts.googleapis.com";
-@import "https://fonts.gstatic.com";
+@import "https://fonts.gstatic.com" crossorigin;
 @import "https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap";
 /*!
  * Bootstrap v4.6.2 (https://getbootstrap.com/)
@@ -10401,9 +10401,29 @@ h4 {
     max-width: 994px;
   }
 }
+@media screen and (max-width: 993px) {
+  .Info .container {
+    max-width: 962px;
+  }
+}
 @media screen and (max-width: 835px) {
   .Info .container {
     max-width: 805px;
+  }
+}
+@media screen and (max-width: 820px) {
+  .Info .container {
+    max-width: 790px;
+  }
+}
+@media screen and (max-width: 801px) {
+  .Info .container {
+    max-width: 770px;
+  }
+}
+@media screen and (max-width: 769px) {
+  .Info .container {
+    max-width: 738px;
   }
 }
 .Info .subtitle {
@@ -10515,10 +10535,24 @@ h2 {
   overflow: hidden;
   -webkit-transform: translate3d(0px, 0px, 0px);
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 993px) {
   .owl-carousel .owl-stage-outer {
-    -webkit-transform: translate3d(20px, 0px, 0px);
-    max-width: 799px;
+    max-width: 914px;
+  }
+}
+@media screen and (max-width: 835px) {
+  .owl-carousel .owl-stage-outer {
+    max-width: 785px;
+  }
+}
+@media screen and (max-width: 801px) {
+  .owl-carousel .owl-stage-outer {
+    max-width: 764px;
+  }
+}
+@media screen and (max-width: 769px) {
+  .owl-carousel .owl-stage-outer {
+    max-width: 733px;
   }
 }
 
@@ -10530,10 +10564,33 @@ h2 {
     max-width: 300px;
   }
 }
+@media screen and (max-width: 993px) {
+  .Plans .card-body {
+    max-width: 290px;
+  }
+}
 @media screen and (max-width: 835px) {
   .Plans .card-body {
     padding: 80px 0 50px;
     max-width: 242px;
+  }
+}
+@media screen and (max-width: 821px) {
+  .Plans .card-body {
+    padding: 56px 0 40px;
+    max-width: 234px;
+  }
+}
+@media screen and (max-width: 821px) {
+  .Plans .card-body {
+    padding: 56px 0 40px;
+    max-width: 224px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .Plans .card-body {
+    padding: 56px 0 40px;
+    max-width: 214px;
   }
 }
 .Plans .card-body h5:before {
@@ -10662,6 +10719,7 @@ h5 {
   -ms-user-select: none;
   user-select: none;
   display: flex;
+  justify-content: center;
 }
 .Comments .owl-carousel .owl-stage {
   display: flex;
@@ -10789,10 +10847,34 @@ footer .banner {
     margin-left: -497px;
   }
 }
+@media screen and (max-width: 1024px) {
+  footer .banner {
+    max-width: 962px;
+    margin-left: -481px;
+  }
+}
 @media screen and (max-width: 835px) {
   footer .banner {
     max-width: 804px;
     margin-left: -402px;
+  }
+}
+@media screen and (max-width: 835px) {
+  footer .banner {
+    max-width: 790px;
+    margin-left: -395px;
+  }
+}
+@media screen and (max-width: 801px) {
+  footer .banner {
+    max-width: 770px;
+    margin-left: -385px;
+  }
+}
+@media screen and (max-width: 769px) {
+  footer .banner {
+    max-width: 739px;
+    margin-left: -369px;
   }
 }
 

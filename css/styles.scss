@@ -1,7 +1,7 @@
 @use "bootstrap.css";
 @import "https://fonts.googleapis.com";
-@import "https://fonts.gstatic.com";
-@import "https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap";
+@import "https://fonts.gstatic.com" crossorigin;
+@import "https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" ;
 
 $main-colore: #F53838;
 $white: #FFFFFF;
@@ -160,8 +160,20 @@ h4 {
     @media screen and (max-width: 1024px) {
       max-width: 994px;
     }
+    @media screen and (max-width: 993px) {
+      max-width: 962px;
+    }
     @media screen and (max-width: 835px) {
       max-width: 805px;
+    }
+    @media screen and (max-width: 820px) {
+      max-width: 790px;
+    }
+    @media screen and (max-width: 801px) {
+      max-width: 770px;
+    }
+    @media screen and (max-width: 769px) {
+      max-width: 738px;
     }
     box-shadow: 95px 1843px 738px rgba(13, 16, 37, 0.01), 53px 1037px 623px rgba(13, 16, 37, 0.03), 24px 461px 461px rgba(13, 16, 37, 0.05), 6px 115px 254px rgba(13, 16, 37, 0.1), 0px 0px 0px rgba(13, 16, 37, 0.1);
     padding: 32px 64px ;
@@ -281,9 +293,21 @@ h2 {
     position: relative;
     overflow: hidden;
     -webkit-transform: translate3d(0px, 0px, 0px);
-    @media screen and (max-width: 1024px) {
-      -webkit-transform: translate3d(20px, 0px, 0px);
-      max-width: 799px;
+    @media screen and (max-width: 993px) {
+      //-webkit-transform: translate3d(63px, 0px, 0px);
+      max-width: 914px;
+    }
+
+    @media screen and (max-width: 835px) {
+      max-width: 785px;
+    }
+    @media screen and (max-width: 801px) {
+      max-width: 764px;
+      //-webkit-transform: translate3d(14px, 0px, 0px);
+    }
+    @media screen and (max-width: 769px) {
+      max-width: 733px;
+      //-webkit-transform: translate3d(6px, 0px, 0px);
     }
   }
 }
@@ -292,10 +316,25 @@ h2 {
     @media screen and (max-width: 1024px) {
       max-width: 300px;
     }
+    @media screen and (max-width: 993px) {
+      max-width: 290px;
+    }
     padding: 80px 70px 50px;
     @media screen and (max-width: 835px) {
       padding: 80px 0 50px;
       max-width: 242px;
+    }
+    @media screen and (max-width: 821px) {
+      padding: 56px 0 40px;
+      max-width: 234px;
+    }
+    @media screen and (max-width: 821px) {
+      padding: 56px 0 40px;
+      max-width: 224px;
+    }
+    @media screen and (max-width: 768px) {
+      padding: 56px 0 40px;
+      max-width: 214px;
     }
     h5 {
       &:before {
@@ -433,6 +472,7 @@ h5 {
       -ms-user-select: none;
       user-select: none;
       display: flex;
+      justify-content: center;
     }
   }
   .owl-carousel {
@@ -582,9 +622,25 @@ footer {
       max-width: 994px;
       margin-left: -497px;
     }
+    @media screen and (max-width: 1024px) {
+      max-width: 962px;
+      margin-left: -481px;
+    }
     @media screen and (max-width: 835px) {
       max-width: 804px;
       margin-left: -402px;
+    }
+    @media screen and (max-width: 835px) {
+      max-width: 790px;
+      margin-left: -395px;
+    }
+    @media screen and (max-width: 801px) {
+      max-width: 770px;
+      margin-left: -385px;
+    }
+    @media screen and (max-width: 769px) {
+      max-width: 739px;
+      margin-left: -369px;
     }
     box-sizing: border-box;
     background: #FFFFFF;
